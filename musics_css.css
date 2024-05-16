@@ -1,0 +1,160 @@
+@font-face {
+  font-family: lovelo_black;
+  src: url(../Fontes/LoveloFont/Lovelo\ Black.otf);
+}
+
+@font-face {
+  font-family: super_festival;
+  src: url(../Fontes/super_festival/Super\ Festival\ Personal\ Use.ttf);
+}
+
+body {
+  background-image: url(img/stars.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  word-spacing: 2px;
+  margin-top: 5%;
+  font-family: lovelo_black;
+  font-size: 30px;
+  color: #000000;
+}
+
+#musicas {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+#musicas ul li{
+  display: inline-block;
+  margin-left: 2%;
+  color: #ffffff;
+  font-family: "Calibri";
+  text-align: center;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+
+table {
+  width: 100%;
+  margin-top: 0%;
+  margin-left: 0%;
+  border-radius: 20px;
+  padding: 5px 5px;
+}
+
+table tr {
+  padding: 7px 5px;
+}
+
+table td {
+  padding: 3px 3px;
+  border: 0px;
+  text-align: center;
+}
+
+table img {
+  border-radius: 20px;
+}
+
+audio {
+  width: 250px;
+  height: 30px;
+}
+
+#titulos {
+  margin: 2%;
+  font-family: super_festival;
+  color: #dfdcd7;
+  font-size: 17px;
+}
+
+#art {
+  font-family: "Calibri";
+  font-size: 15px;
+  color: #dfdcd7;
+  font-weight: bold;
+}
+
+#lyc {
+  font-family: "Calibri";
+  font-size: 15px;
+  color: #dfdcd7;
+  font-weight: bold;
+}
+
+a {
+  color: #87dbff;
+}
+
+.button {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(165, 255, 160, 0.253);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: rgb(160, 255, 180);
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Voltar ao início";
+  color: rgb(0, 0, 0);
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}
+
+@media screen and (min-width:300px) and (max-width:900px) {
+  body {
+    background-image: url(img/space.gif);
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+}

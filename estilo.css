@@ -1,0 +1,123 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url(img/night.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  word-spacing: 2px;
+  font-family: lovelo_black;
+  font-size: 30px;
+  color: #ffffff;
+  text-shadow: rgb(255, 255, 255) 0em 0em 0.6em;
+  /*direção esquerda, direção cima, embaçamento*/
+}
+
+img {
+  border-radius: 200px;
+  width: 20%;
+  height: 20%;
+}
+
+h5 {
+  align-items: baseline;
+  text-align: center;
+  color: white;
+  text-shadow: black 0.2em 0.2em 0.5em;
+  font-size: 10px;
+  word-spacing: 2px;
+  font-family: Arial;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: lovelo_black;
+  src: url(../Fontes/LoveloFont/Lovelo\ Black.otf);
+}
+
+.botao {
+  margin-top: 2%;
+}
+
+.cssbuttons-io-button {
+  font-family: lovelo_black;
+  background: #76f070;
+  color: rgb(0, 0, 0);
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #4da651;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #52b959;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #54b952;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+@media screen and (min-width:300px) and (max-width:900px) {
+  body {
+    background-image: url(img/back.jpg);
+  }
+}
